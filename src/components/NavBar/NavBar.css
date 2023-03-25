@@ -1,0 +1,23 @@
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid black;
+    width: 100%;
+    
+    
+}
+
+h1{
+    margin: 1rem;
+    color: red;
+}
+
+li{
+    display: inline-block;
+    margin: 1rem;
+    cursor: pointer;
+    list-style: none;
+}
+
