@@ -17,7 +17,7 @@ export const getProducts = () =>{
     })
 }
 
-//Creamos una nueva funcion similar pero que nos retorne un solo item:
+
 
 export const getUnProducto = (id) => {
     return new Promise (resolve =>{
@@ -29,7 +29,7 @@ export const getUnProducto = (id) => {
     })
 }
 
-//Creamos una nueva cuncion que retorna toda la categoria
+
 
 export const getProductosPorCategoria = (idCategoria) => {
     return new Promise (resolve=>{
