@@ -9,6 +9,11 @@ header {
     
 }
 
+.tit{
+
+    text-decoration: none;
+}
+
 h1{
     margin: 1rem;
     color: red;
@@ -19,5 +24,10 @@ li{
     margin: 1rem;
     cursor: pointer;
     list-style: none;
+}
+
+.navli {
+    text-decoration: none;
+    color: red;
 }
 
