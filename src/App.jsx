@@ -19,7 +19,6 @@ function App() {
           <Route path="/item/:idItem" element={<ItemDetailContainer />} />
           <Route path="/cart" element={<Cart/>}   />
           <Route path="/checkout" element={<CheckOut/>}   />
-          <Route path="*" element={<h2>Sitio en Construcción</h2>} />
         </Routes>
       </CarritoProvider>
       </BrowserRouter>
