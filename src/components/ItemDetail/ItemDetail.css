@@ -1,7 +1,26 @@
 .contenedorItem {
+
     text-align: center;
     border: 1px solid #e3e1e1;
     margin: 3rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.terminar button {
+    background-color: green;
+}
+.img{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.detalles {
     display: flex;
     flex-flow: column;
     justify-content: center;

@@ -1,34 +1,37 @@
 import { useState, useEffect } from 'react'
-import { getProducts, getProductosPorCategoria } from '../../asyncmock'
 import ItemList from '../ItemList/ItemList';
 import { useParams } from 'react-router-dom';
-import './ItemListContainer.css'
+import {collection, getDocs, where, query} from "firebase/firestore";
+import { db } from '../../services/firebase/config';
 
-const ItemListContainer = (props) => {
-    const [products, setProducts] = useState([]);
+const ItemListContainer = ({ greeting }) => {
+
+    const [productos, setProductos] = useState([]);
 
     const {idCategoria} = useParams();
 
-    useEffect(()=>{
+    useEffect( ()=> {
+        const misProductos = idCategoria ? query(collection(db, "productos"), where("idCat", "==", idCategoria)) : collection(db, "productos");
 
-        const funcionProductos = idCategoria ? getProductosPorCategoria : getProducts;
+        getDocs(misProductos)
+            .then(res=> {
+                const nuevosProductos = res.docs.map( doc => {
+                    const data = doc.data()
+                    return {id:doc.id, ...data}
+                })
+                setProductos(nuevosProductos);
+            })
+            .catch(error => console.log(error))
+    }, [])
 
-        funcionProductos(idCategoria)
-        .then(response => setProducts(response))
-        .catch(error =>console.error(error))
-    }, [idCategoria])
 
 
-  return (
-    <div>
-
-    <h2 className='sub'>
-        {props.greeting}
-    </h2>
-    <ItemList products={products}/>
-    </div>
-
-  )
+    return (
+        <>
+            <h2 style={{ textAlign: "center" }}> {greeting} </h2>
+            <ItemList productos={productos} />
+        </>
+    )
 }
 
 export default ItemListContainer

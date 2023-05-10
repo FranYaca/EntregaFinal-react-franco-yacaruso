@@ -1,0 +1,22 @@
+.out {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.out form {
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+}
+
+.out label {
+    margin-right: 1rem;
+}
+
+.out button {
+    background-color: green;
+}
+

@@ -1,0 +1,18 @@
+.finalizar{
+    background-color: green;
+}
+
+.inicio{
+    background-color: blue;
+}
+
+.carrit {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ .btn-eliminar{
+    background-color: red;
+}

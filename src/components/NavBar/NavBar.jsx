@@ -8,35 +8,35 @@ const NavBar = () => {
       <Link className='tit' to={"/"}>
         <h1>Tienda Tec</h1>
       </Link>
-        <nav>
+        
             <ul>
                 <li>
-                  <NavLink className={"navli"} to={"/"}>
+                  <Link className={"navli"} to={"/"}>
                   Home
-                  </NavLink>
+                  </Link>
                 </li>
                 <li>
-                  <NavLink className={"navli"} to={`/categoria/1`}>
+                  <Link className={"navli"} to={`/categoria/1`}>
                   Monitores
-                  </NavLink>
+                  </Link>
                 </li>
                 <li>
-                  <NavLink className={"navli"} to={`/categoria/2`}>
+                  <Link className={"navli"} to={`/categoria/2`}>
                     Notebooks
-                  </NavLink>
+                  </Link>
                   </li>
                 <li>
-                  <NavLink className={"navli"} to={`/categoria/3`}>
+                  <Link className={"navli"} to={`/categoria/3`}>
                     Pc
-                  </NavLink>
+                  </Link>
                 </li>
                 <li>
-                  <NavLink className={"navli"} to={`/categoria/4`}>
+                  <Link className={"navli"} to={`/categoria/4`}>
                     Perifericos
-                  </NavLink>
+                  </Link>
                 </li>
             </ul>
-        </nav>
+        
         <CardWidget/>
     </header>
   )
