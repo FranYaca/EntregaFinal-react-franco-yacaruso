@@ -11,29 +11,29 @@ const NavBar = () => {
         
             <ul>
                 <li>
-                  <Link className={"navli"} to={"/"}>
+                  <NavLink className={"navli"} to={"/"}>
                   Home
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link className={"navli"} to={`/categoria/1`}>
+                  <NavLink className={"navli"} to={`/categoria/1`}>
                   Monitores
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link className={"navli"} to={`/categoria/2`}>
+                  <NavLink className={"navli"} to={`/categoria/2`}>
                     Notebooks
-                  </Link>
+                  </NavLink>
                   </li>
                 <li>
-                  <Link className={"navli"} to={`/categoria/3`}>
+                  <NavLink className={"navli"} to={`/categoria/3`}>
                     Pc
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link className={"navli"} to={`/categoria/4`}>
+                  <NavLink className={"navli"} to={`/categoria/4`}>
                     Perifericos
-                  </Link>
+                  </NavLink>
                 </li>
             </ul>
         

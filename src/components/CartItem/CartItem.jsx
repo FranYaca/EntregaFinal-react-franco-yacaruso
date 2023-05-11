@@ -9,7 +9,8 @@ const CartItem = ({item, cantidad}) => {
   const {eliminarProducto} = useContext(CarritoContext);
 
   
-    return (
+  
+  return (
       <div>
           <h4> {item.nombre} </h4>
           <p>Cantidad: {cantidad} </p>
