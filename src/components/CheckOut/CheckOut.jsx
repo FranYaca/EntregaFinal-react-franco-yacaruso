@@ -1,8 +1,9 @@
 import { useState, useContext } from 'react'
 import { CarritoContext } from '../../context/CarritoContext'
 import { db } from '../../services/firebase/config'
-import { collection, addDoc } from 'firebase/firestore'
+import { collection, addDoc} from 'firebase/firestore'
 import './CheckOut.css'
+import { Link } from 'react-router-dom'
 
 const Checkout = () => {
     const { carrito, vaciarCarrito } = useContext(CarritoContext);
@@ -28,7 +29,8 @@ const Checkout = () => {
             setError("Los campos del email no coinciden");
             return;
         }
-
+        
+        
         
 
         const orden = {
@@ -44,6 +46,7 @@ const Checkout = () => {
             email,
         };
 
+        
         
         addDoc(collection(db, "ordenes"), orden)
             .then((docRef) => {
@@ -101,6 +104,7 @@ const Checkout = () => {
             {
                 ordenId && (
                     <strong>¡Gracias por tu compra! Tu número de orden es {ordenId} </strong>
+                    
                 )
             }
 
