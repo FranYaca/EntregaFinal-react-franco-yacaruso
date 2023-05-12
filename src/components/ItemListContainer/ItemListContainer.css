@@ -1,5 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+
 .sub{
     text-align: center;
     color: red;
 
+}
+
+h2 {
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Russo One', sans-serif;
 }

@@ -3,6 +3,7 @@ import ItemList from '../ItemList/ItemList';
 import { useParams } from 'react-router-dom';
 import {collection, getDocs, where, query} from "firebase/firestore";
 import { db } from '../../services/firebase/config';
+import './ItemListContainer.css'
 
 const ItemListContainer = ({ greeting }) => {
 
@@ -28,7 +29,10 @@ const ItemListContainer = ({ greeting }) => {
 
     return (
         <>
-            <h2 style={{ textAlign: "center" }}> {greeting} </h2>
+            
+            <h2> {greeting} </h2>
+                
+            
             <ItemList productos={productos} />
         </>
     )

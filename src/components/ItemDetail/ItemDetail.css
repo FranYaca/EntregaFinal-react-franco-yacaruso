@@ -25,6 +25,11 @@
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    font-family: 'Russo One', sans-serif;
+}
+
+.detalles h2{
+    text-decoration: none;
 }
 
 .contador{

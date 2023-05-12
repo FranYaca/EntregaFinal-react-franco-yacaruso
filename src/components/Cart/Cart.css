@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+
 .finalizar{
     background-color: green;
 }
@@ -6,6 +9,10 @@
     background-color: blue;
 }
 
+.volver button {
+    background-color: blue;
+    
+}
 .carrit {
     display: flex;
     flex-flow: column;
@@ -13,6 +20,12 @@
     align-items: center;
 }
 
- .btn-eliminar{
-    background-color: red;
+.carrit .vaciar {
+    background-color:red ;
+}
+
+.carrito {
+    text-decoration: none;
+    text-align: left;
+    font-family: 'Russo One', sans-serif;
 }
